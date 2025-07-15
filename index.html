@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header,footer{
+            background-color:rgb(50, 142, 240);;
+            color:white;
+            text-align:center;
+            padding:15px;
+            box-shadow: 0 0 5px gray;
+        }
+        section{
+            display:flex;
+        }
+        #left-bar,#right-bar{
+             box-shadow: 0 0 3px gray;
+             margin:10px 5px;
+             /* height:calc(100vh - 120px); */    /*Better to use min-height:calc(100vh-120px)*/
+
+        }#left-bar{
+            width:30%;
+        }
+        #right-bar{
+            width:70%;
+            padding:10px;
+
+        }
+        #left-bar > ul li{
+            list-style:none;
+        }
+        #pp{
+            width:150px;
+            height:150px;
+            border:1px solid black;
+            border-radius:50%;
+           
+        }
+        /*
+        @media screen and (max-width: 768px) {
+            #left-bar{
+                background-color: red;
+            }
+        }
+        @media screen and (max-width: 500px) {
+            #left-bar{
+                background-color: green;
+            }
+        }
+            */
+        @media screen and (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+            #left-bar, #right-bar {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <header>My Web Resume</header>
+    <section>
+        <div id="left-bar">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email:princefarswan1609@gmail.com</li>
+                <li>Phone:83CVBR89</li>
+                <li>City:New Delhi,India</li>
+            </ul><br><br>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+        </div>
+        <div id="right-bar">
+            <img id="pp" src="My Image.jpg" alt="Image of Priyanshu">
+            <h1>Priyanshu</h1>
+            <br>
+            Passionate about coding and always eager to learn new technologies. I have a strong foundation in web development and programming languages, with a keen interest in building efficient and scalable applications. I am currently seeking opportunities to apply my skills in a professional environment and contribute to innovative projects.<br><br>
+            <h3>Education</h3>
+            <ul>
+                <li>Btech in Computer Science from Bhagwan Parshuram Institute of Technology,IPU</li>
+                <li>2023-present</li>
+                
+            </ul>
+            <br>
+            <h3>Projects</h3>
+            <ul>
+                <li>Web Resume generated using HTML,CSS and Javascript</li>
+                <li>TODO using Java script</li>
+            </ul>
+            <br>
+            <h3>Experience</h3>
+            Fresher with no prior work experience, but eager to learn and contribute to a team. I have completed several projects during my academic career that demonstrate my skills in web development and programming.<br><br>
+
+        </div>
+    </section>
+    <footer>&copy;Priyanshu Singh</footer>
+    
+</body>
+</html>
